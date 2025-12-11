@@ -1,14 +1,14 @@
 public class Contact {
-    String firstName;
-    String lastName;
-    String address;
-    String city;
-    String state;
-    String phoneNumber;
-    String email;
-    Integer pin;
+    private String firstName;
+    private String lastName;
+    private String address;
+    private String city;
+    private String state;
+    private String phoneNumber;
+    private String email;
+    private String zipcode;
 
-    public Contact(String firstName, String lastName, String address, String city, String state, String phoneNumber, String email, Integer pin) {
+    public Contact(String firstName, String lastName, String address, String city, String state, String phoneNumber, String email, String zipcode) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -16,7 +16,7 @@ public class Contact {
         this.state = state;
         this.phoneNumber = phoneNumber;
         this.email = email;
-        this.pin = pin;
+        this.zipcode = zipcode;
     }
 
     @Override
@@ -29,7 +29,7 @@ public class Contact {
                 ", state='" + state + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", email='" + email + '\'' +
-                ", pin=" + pin +
+                ", pin=" + zipcode +
                 '}';
     }
 }
